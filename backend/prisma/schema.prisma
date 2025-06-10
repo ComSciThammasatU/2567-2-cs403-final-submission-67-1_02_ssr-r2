@@ -65,7 +65,7 @@ model User {
   firstName       String
   lastName        String
   nickName        String
-  discordId       String
+  discordId       String @unique
   discordUsername String
   isActive        Boolean  @default(true)
   roles           Role[]   @relation("UserRoles")
