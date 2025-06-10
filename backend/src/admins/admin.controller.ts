@@ -25,13 +25,12 @@ export class AdminController {
     const discordUsernameToIdMap = await this.discordService.getDiscordUsernameToIdMap()
 
     googleSheetResponse.data.values.map(async curr => {
-      const discordUsername = curr[0]
-      const userRoleInGoogleSheet = curr[1]
-      const discordId = discordUsernameToIdMap[curr[0]]
-      const firstname = curr[5].split(' ')[0]
-      const lastname = curr[5].split(' ')[1]
-      const nickname = curr[4]
-
+      const discordUsername = curr[9]
+      const userRoleInGoogleSheet = curr[10]
+      const discordId = discordUsernameToIdMap[discordUsername]
+      const firstname = curr[1].split(' ')[0]
+      const lastname = curr[1].split(' ')[1]
+      const nickname = curr[2]
       const newUser = {
         discordId: discordId,
         discordUsername: discordUsername,
