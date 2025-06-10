@@ -1,0 +1,92 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Event {
+  eventId           String   @id @default(uuid()) //uuid
+  eventName         String   @unique
+  eventDate         DateTime
+  startTime         DateTime
+  endTime           DateTime
+  dressCode         String
+  status            Status   @default(UPCOMING)
+  additionalDetails String
+  songs             Song[]
+  currentSongId     String?
+  currentSong      Song?    @relation("CurrentSong", fields: [currentSongId], references: [songId])
+}
+
+enum Status {
+  UPCOMING
+  ONGOING
+  COMPLETED
+}
+
+model Song {
+  songId               String @id @default(uuid())
+  songName             String
+  songDescription      String
+  songOrder            Int    @default(1)
+  songKey              String
+  songReference        String
+  totalVocalist        Int
+  currentVocalList     Int    @default(0)
+  totalGuitarist       Int
+  currentGuitarist     Int    @default(0)
+  totalDrummer         Int
+  currentDrummer       Int    @default(0)
+  totalBassist         Int
+  currentBassist       Int    @default(0)
+  totalKeyboardist     Int
+  currentKeyboardist   Int    @default(0)
+  totalExtra           Int
+  currentExtra         Int    @default(0)
+  totalPercussionist   Int
+  currentPercussionist Int    @default(0)
+  eventId              String
+  event                Event  @relation(fields: [eventId], references: [eventId])
+  users                User[]
+  currentInEvents      Event[] @relation("CurrentSong")
+}
+
+model User {
+  userId          String   @id @default(uuid())
+  firstName       String
+  lastName        String
+  nickName        String
+  discordId       String
+  discordUsername String
+  isActive        Boolean  @default(true)
+  roles           Role[]   @relation("UserRoles")
+  songs          Song[]
+}
+
+model Role {
+  roleId String   @id @default(uuid())
+  role   UserRole
+  users  User[]   @relation("UserRoles")
+}
+
+enum UserRole {
+  vocalist
+  guitarist
+  bassist
+  drummer
+  Keyboardist
+  extra
+  percussionist
+  backstage
+  staff
+  admin
+}
