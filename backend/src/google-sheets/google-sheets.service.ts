@@ -8,7 +8,7 @@ export class GoogleSheetsService {
   private sheets: sheets_v4.Sheets
   private auth: Auth.GoogleAuth
   private spreadsheetId = process.env.GOOGLE_SHEET_ID
-  private sheetRange = 'B2:G2'
+  private sheetRange = 'B:P'
 
   constructor() {
     this.sheets = google.sheets('v4')
@@ -46,14 +46,25 @@ export class GoogleSheetsService {
 
   }
 
-  
-
   async readSheet() {
     const { sheetName, cellRange } = await this.getSheetName()
-    return await this.sheets.spreadsheets.values.get({
+    const response = await this.sheets.spreadsheets.values.get({
       auth: this.auth,
       spreadsheetId: this.spreadsheetId,
       range: `${sheetName}!${cellRange}`,
     })
+
+    // Filter out empty rows and skip header row
+    const rows = response.data.values || []
+    const nonEmptyRows = rows
+      .slice(1) // Skip the header row
+      .filter(row => row.some(cell => cell !== null && cell !== ''))
+    
+    return {
+      data: {
+        ...response.data,
+        values: nonEmptyRows
+      }
+    }
   }
 } 
