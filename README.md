@@ -37,7 +37,7 @@ Manual / Instructions for your projects starts here !
 - ตั้งค่าฐานข้อมูลให้ถูกต้องตามการตั้งค่าของผู้ใช้งาน ในตัวแปล `DATABASE_URL`
 - ทำการใส่ user discord ID และ discord username ในตัวแปล `SEED_DISCORD_ID` กับ `SEED_DISCORD_USERNAME` ตามลำดับ
   ![Image](https://github.com/user-attachments/assets/6f550047-aafa-453e-9ab1-b2967fd6dde6)
-- ใส่ discord server ID ในที่นี้ได้ทำการสร้าง server ให้ผู้ใช้งานแล้วให้ทำการ copy ID จากตรงนี้ 1325140885666791495 ซึ่งหน้าตา server จะเป็นรูปแบบนี้ นำไปใส่ในตัวแปร `DISCORD_SERVER_ID`
+- ใส่ discord server ID ในที่นี้ได้ทำการสร้าง server ให้ผู้ใช้งานแล้วให้ทำการ copy ID จากตรงนี้ `1325140885666791495` ซึ่งหน้าตา server จะเป็นรูปแบบนี้ นำไปใส่ในตัวแปร `DISCORD_SERVER_ID`
   ![Image](https://github.com/user-attachments/assets/c89e1e48-b103-4cbc-94b0-60f6d73d83c8)
    
 # วิธีติดตั้ง dependencies และ setup ฐานข้อมูล
