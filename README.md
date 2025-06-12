@@ -26,7 +26,7 @@ Manual / Instructions for your projects starts here !
 
 
 
-# การ Setup third library API
+# การ Setup Clerk API และ Discord API
 ลิงก์สำหรับ Clerk Dashboard: https://dashboard.clerk.com  
 ลิงก์สำหรับ Discord Developer Protal: https://discord.com/developers/applications
 - Setup Clerk และ Discord API ตามคู่มือ: https://clerk.com/docs/authentication/social-connections/discord  
@@ -44,10 +44,12 @@ Manual / Instructions for your projects starts here !
 
 - เพิ่ม Discord bot เข้าสู่ Discord Server โดยไปที่ OAuth2 → OAuth2 URL Generator → เลือก Scope เป็น "Bot" → มอบสิทธิ์ "Administrator" -> คัดลอกลิงก์ที่ได้ → เปิดลิงก์ → เพิ่ม Bot เข้าเซิร์ฟเวอร์ Sci Band
 
-# Google Forms และ Google sheets
+# การ Setup Google Forms และ Google sheets
 - คัดลอกฟอร์มสมัคร Sci Band: https://docs.google.com/forms/d/1YQ4yOBQZNrSyrCHsir8ZBqPKhqrPns1ReM6pen9b-7U/copy
 
 - ลิงก์ Google Forms กับ Google Sheets โดยไปที่การตอบกลับ -> ลิงก์ไปยังชีต
+  ![image](https://github.com/user-attachments/assets/6f16e4ad-c52a-4394-ba4c-2b4287e401bb)
+
 
 - เปิดใช้งาน Google Sheets API ที่: https://console.cloud.google.com โดยการ new project -> Navigation menu -> APIs & Services -> Enabled APIs & Services -> ค้นหา Google sheets และทำการ enable Google Sheets API
 
