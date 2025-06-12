@@ -11,13 +11,18 @@
 
 **ผู้จัดทำโครงงาน:** 
 1. นายณกลิน บุณยกะลิน  6409682660  nagalin.pun@dome.tu.ac.th
-2. <ถ้ามี>
+2. นายสันติภาพ สโมสร   6409680086  santiphap.sam@dome.tu.ac.th
    
 Manual / Instructions for your projects starts here !
 # Topic 1
 # Topic 2 
 # Topic 3
-# Topic 4
+# การ set ค่าไฟล์ .env ของ postgresql และ discord
+- ทำการสร้างไฟล์ .env ในโฟลเดอร์ backend
+- ตั้งค่าฐานข้อมูลให้ถูกต้องตามการตั้งค่าของผู้ใช้งาน ในตัวแปล DATABASE_URL
+- ทำการใส่ user discord ID และ discord username ในตัวแปล SEED_DISCORD_ID กับ SEED_DISCORD_USERNAME ตามลำดับ
+- ใส่ discord server ID ในที่นี้ได้ทำการสร้าง server ให้ผู้ใช้งานแล้วให้ทำการ copy ID จากตรงนี้ 1325140885666791495
+   
 # วิธีติดตั้ง dependencies และ setup ฐานข้อมูล
 - ติดตั้ง dependencies สำหรับ frontend ด้วยคำสั่ง `cd frontend` และ `npm install`
 - ติดตั้ง dependencies สำหรับ backend ด้วยคำสั่ง `cd backend` และ `npm install`
