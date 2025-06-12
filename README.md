@@ -26,7 +26,7 @@ Manual / Instructions for your projects starts here !
 
 
 
-# การ Setup Clerk API และ Discord API
+# การ Setup Clerk API, Discord API และ Discord bot
 ลิงก์สำหรับ Clerk Dashboard: https://dashboard.clerk.com  
 ลิงก์สำหรับ Discord Developer Protal: https://discord.com/developers/applications
 - Setup Clerk และ Discord API ตามคู่มือ: https://clerk.com/docs/authentication/social-connections/discord  
@@ -43,8 +43,20 @@ Manual / Instructions for your projects starts here !
 - Copy JWKS Public key ใส่ใน .env ของ backend ในตัวแปร `CLERK_JWT_PUBLIC_KEY`
 
 - Copy Discord bot token เข้าสู่ระบบ โดยเลือกหัวข้อ Bot ใน Discord Developer Portal → คัดลอก Token → วางในไฟล์ .env ของ backend ที่ DISCORD_BOT_TOKEN
+  ![image](https://github.com/user-attachments/assets/db6866ba-7746-4871-985b-84dd733a078d)
+- ติ๊กถูกในช่อง Presence Intent, Server Members Intent, Message Content Intent เพื่อให้ Discord bot สามารถจัดการผู้ใช้ภายใน Server ได้ และกด Save Changes
+  ![image](https://github.com/user-attachments/assets/c479f0f9-a4fe-45db-b925-89bd7a1beccb)
 
-- เพิ่ม Discord bot เข้าสู่ Discord Server โดยไปที่ OAuth2 → OAuth2 URL Generator → เลือก Scope เป็น "Bot" → มอบสิทธิ์ "Administrator" -> คัดลอกลิงก์ที่ได้ → เปิดลิงก์ → เพิ่ม Bot เข้าเซิร์ฟเวอร์ Sci Band
+- เพิ่ม Discord bot เข้าสู่ Discord Server โดยไปที่ OAuth2 → OAuth2 URL Generator → เลือก Scope เป็น "Bot"
+![image](https://github.com/user-attachments/assets/5e0d9144-cf05-498f-9d01-bc49dec02801)
+
+- ในหัวข้อ Bot Permissions เลือก Administrator 
+  ![image](https://github.com/user-attachments/assets/0bb36dcc-e002-418a-879b-06235b993536)
+
+- คัดลอกลิงก์ที่ได้ → เปิดลิงก์ → เพิ่ม Bot เข้าเซิร์ฟเวอร์ Sci Band
+
+  ![image](https://github.com/user-attachments/assets/e93a32dc-aab0-484d-a83b-f46bb261198e)
+
 
 # การ Setup Google Forms และ Google sheets
 - คัดลอกฟอร์มสมัคร Sci Band: https://docs.google.com/forms/d/1YQ4yOBQZNrSyrCHsir8ZBqPKhqrPns1ReM6pen9b-7U/copy
