@@ -1,15 +1,15 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/w8H8oomW)
 **<ins>Note</ins>: Students must update this `README.md` file to be an installation manual or a README file for their own CS403 projects.**
 
-**รหัสโครงงาน:** ระบุรหัสโครงงานที่นี่ เช่น 66-2_01_ssr-s2
+**รหัสโครงงาน:** ระบุรหัสโครงงานที่นี่ เช่น 67-1_02_ssr-r2
 
 **ชื่อโครงงาน (ไทย):** ระบบจัดการงานแสดงของชุมนุมดนตรี คณะวิทยาศาสตร์และเทคโนโลยี
 
 **Project Title (Eng):** SCI BAND MUSIC PERFORMANCE MANAGEMENT SYSTEM 
 
-**อาจารย์ที่ปรึกษาโครงงาน:** ระบุชื่ออาจารย์ที่ปรึกษาโครงงานที่นี่ 
+**อาจารย์ที่ปรึกษาโครงงาน:** ผศ. ดร. ทรงศักดิ์ รองวิริยะพานิช
 
-**ผู้จัดทำโครงงาน:** (โปรดเขียนข้อมูลผู้จัดทำโครงงานตามฟอร์แมตดังแสดงในตัวอย่างด้านล่าง)
+**ผู้จัดทำโครงงาน:** 
 1. นายณกลิน บุณยกะลิน  6409682660  nagalin.pun@dome.tu.ac.th
 2. <ถ้ามี>
    
@@ -30,6 +30,15 @@ https://clerk.com/docs/authentication/social-connections/discord
 ลิงก์สำหรับ discord developer application: https://discord.com/developers/applications  
 โดยหลัง setup เสร็จแล้วให้กลับไปที่หน้า clerk dashboard และไปที่หัวข้อ configure และหาหัวข้อ Developers และกด API keys
 จากกนั้นทำการ copy Public key, Secret key, JWKS Public key และเปิด file .env ของ frontend เพื่อใส่ public key ลงไปในตัวแปร `EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY` จากนั้นเปิด file .env ของ backend และ Secret key ในตัวแปร `CLERK_SECRET_KEY` สุดท้ายวาง JWKS Public key ใส่ตัวแปร `CLERK_JWT_PUBLIC_KEY`
+## Discord bot
+ในหน้า Discord developer ให้ไปที่หน้า Bot และ copy token เพื่อนำไปวางที่ไฟล์ .env ของ backend ในตัวแปร `DISCORD_BOT_TOKEN` จากนั้นให้ที่หน้า Oauth2 ภายใต้หัวข้อ OAuth2 URL Generator ให้เลือก Bot และให้สิทธิ์เป็น Administrator จากนั้นให้ copy Generated URL และเปิดลิงก์จากนั้นทำการเลือก Sci band server เพื่อทำการเพิ่ม bot เข้าสู่ Sci band server
 
-# Topic 7
-# Topic 8 
+# Download android studio และ emulator
+ลิงก์สำหรับ Download android studio เพื่อใช้งาน emulator: https://developer.android.com/studio  
+หลัง download android studio เสร็จแล้วนั้นให้ทำการ install emulator โดยแนะนำ emulator ที่มีขนาดหน้าจอ 1080 x 2400 เพื่อให้การแสดงผล UI เป็นไปอย่างเที่ยงตรงมากที่สุด
+
+
+# Run project
+หลังการ setup project เสร็จเรียบร้อยแล้วนั้นสามารถเริ่ม run project ได้โดย
+- เริ่มการ run frontend ด้วยคำสั่ง `cd fronend` และ `npm run android` โดยต้องเปิด emulator ไว้ก่อนใช้งานคำสั่ง
+- เริ่มการ run backend ด้วยคำสั่ง `cd backend` และ `npm run start:dev`
