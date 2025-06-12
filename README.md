@@ -33,6 +33,8 @@ Manual / Instructions for your projects starts here !
 
 
 - เพิ่ม API keys เข้าสู่ระบบ โดยเข้าสู่ Clerk Dashboard → Configure → Developers → API Keys
+  ![image](https://github.com/user-attachments/assets/ea81884f-3395-429b-906c-007ba9edc81e)
+
 
 - Copy Public key ใส่ในไฟล์ .env ของ frontend ในตัวแปร   `EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY` 
 
