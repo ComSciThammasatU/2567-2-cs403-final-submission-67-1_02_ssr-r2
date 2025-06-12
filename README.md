@@ -22,22 +22,22 @@ Manual / Instructions for your projects starts here !
 # วิธี clone repositorie 
 - copy ลิ้ง url ของ git โดยใช้เป็น https
   ![Image](https://github.com/user-attachments/assets/424be6a2-b257-4d73-9920-f143eff48274)
-- สร้างโฟลเดอร์ไว้สักที่นึงเพื่อลองรับ code ที่จะทำการใช้คำสั่ง git clone
-- เปิด cmd หรือ Command Prompt ให้ set path ให้ตรงกับที่โฟลเดอร์ได้สร้างเอาไว้ และใช้คำสั่ง git clone --URL ของ github-- ตามด้วยชื่อ โฟลเดอร์ เป็นอันเสร็จสมบูรณ์
+- สร้างโฟลเดอร์ไว้สักที่นึงเพื่อลองรับ code ที่จะทำการใช้คำสั่ง `git clone`
+- เปิด cmd หรือ Command Prompt ให้ set path ให้ตรงกับที่โฟลเดอร์ได้สร้างเอาไว้ และใช้คำสั่ง `git clone --URL ของ github-- ตามด้วยชื่อ โฟลเดอร์` เป็นอันเสร็จสมบูรณ์
   ![Image](https://github.com/user-attachments/assets/8b559109-66bb-42db-af4d-d123e53aab68)
 # การติดตัดเครื่องมือต่างๆเพื่อใช้งาน
 - ติดตั้ง node.js ***ใข้เวอร์ชั่น 22.14 กันกรณีมีปัญหาหรือเกิดบัคได้***
   ![Image](https://github.com/user-attachments/assets/7de45923-c4dc-4d0e-bd2f-be8e87aad314)
-- ติดตั้ง Discord ทำการสมัครถ้ายังไม่มี account และทำการตั้งค่า โหมดของผู้พัฒนา ตั้งค่า -> ขั้นสูง(Advanced) -> เปิดโหมดผู้พัฒนา (Developer mode)
+- ติดตั้ง Discord ทำการสมัครถ้ายังไม่มี account และทำการตั้งค่า โหมดของผู้พัฒนา `ตั้งค่า -> ขั้นสูง(Advanced) -> เปิดโหมดผู้พัฒนา (Developer mode)`
   ![Image](https://github.com/user-attachments/assets/a8391847-a378-46b7-a425-b4d573881175)
-- ติดตั้ง postquresql ใช้เวอร์ชั่น 17.5 หรือล่าสุดก็ได้ทำการตั้งค่า password และเปิด pgadmin4 และทำการล็อคอินตามที่ได้ตั้งค่าเอาไว้ จะได้ในลักษณะแบบนี้
+- ติดตั้ง postquresql ใช้เวอร์ชั่น 17.5 หรือล่าสุดก็ได้และทำการตั้งค่า password และเปิด pgadmin4 และทำการล็อคอินตามที่ได้ตั้งค่าเอาไว้ จะได้ในลักษณะแบบนี้
   ![Image](https://github.com/user-attachments/assets/6176b696-2250-48c1-8b19-ff3c0baff63d)
 # การ set ค่าไฟล์ .env ของ postgresql และ discord
 - ทำการสร้างไฟล์ .env ในโฟลเดอร์ backend
-- ตั้งค่าฐานข้อมูลให้ถูกต้องตามการตั้งค่าของผู้ใช้งาน ในตัวแปล DATABASE_URL
-- ทำการใส่ user discord ID และ discord username ในตัวแปล SEED_DISCORD_ID กับ SEED_DISCORD_USERNAME ตามลำดับ
+- ตั้งค่าฐานข้อมูลให้ถูกต้องตามการตั้งค่าของผู้ใช้งาน ในตัวแปล `DATABASE_URL`
+- ทำการใส่ user discord ID และ discord username ในตัวแปล `SEED_DISCORD_ID` กับ `SEED_DISCORD_USERNAME` ตามลำดับ
   ![Image](https://github.com/user-attachments/assets/6f550047-aafa-453e-9ab1-b2967fd6dde6)
-- ใส่ discord server ID ในที่นี้ได้ทำการสร้าง server ให้ผู้ใช้งานแล้วให้ทำการ copy ID จากตรงนี้ 1325140885666791495 ซึ่งหน้าตา server จะเป็นรูปแบบนี้
+- ใส่ discord server ID ในที่นี้ได้ทำการสร้าง server ให้ผู้ใช้งานแล้วให้ทำการ copy ID จากตรงนี้ 1325140885666791495 ซึ่งหน้าตา server จะเป็นรูปแบบนี้ นำไปใส่ในตัวแปร `DISCORD_SERVER_ID`
   ![Image](https://github.com/user-attachments/assets/c89e1e48-b103-4cbc-94b0-60f6d73d83c8)
    
 # วิธีติดตั้ง dependencies และ setup ฐานข้อมูล
