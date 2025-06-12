@@ -21,8 +21,8 @@ Manual / Instructions for your projects starts here !
 # วิธีติดตั้ง dependencies และ setup database
 - ติดตั้ง dependencies สำหรับ frontend ด้วยคำสั่ง `cd frontend` และ `npm install`
 - ติดตั้ง dependencies สำหรับ backend ด้วยคำสั่ง `cd backend` และ `npm install`
-- ทำ Database migration ด้วยคำสั่ง `npx prisma migrate dev -name init`
-- seed ข้อมูล user ใน database ด้วยคำสั่ง `npx prisma db seed` เพื่อให้สามารถ login เข้าสู่ระบบได้
+- ทำ Database migration ด้วยคำสั่ง `npx prisma migrate dev -name init` ภายใต้ folder backend
+- seed ข้อมูล user ใน database ด้วยคำสั่ง `npx prisma db seed` ภายใต้ folder backend เพื่อให้สามารถ login เข้าสู่ระบบได้
 # การ set up third library API
 ## clerk และ discord
 setup clerk และ discord สำหรับระบบ authentication โดยสามารถอ่านขั้นตอนได้ตามลิงก์:
@@ -33,9 +33,15 @@ https://clerk.com/docs/authentication/social-connections/discord
 ## Discord bot
 ในหน้า Discord developer ให้ไปที่หน้า Bot และ copy token เพื่อนำไปวางที่ไฟล์ .env ของ backend ในตัวแปร `DISCORD_BOT_TOKEN` จากนั้นให้ที่หน้า Oauth2 ภายใต้หัวข้อ OAuth2 URL Generator ให้เลือก Bot และให้สิทธิ์เป็น Administrator จากนั้นให้ copy Generated URL และเปิดลิงก์จากนั้นทำการเลือก Sci band server เพื่อทำการเพิ่ม bot เข้าสู่ Sci band server
 
+# Google Forms และ Google sheets
+เปิดลิงก์ https://docs.google.com/forms/d/1YQ4yOBQZNrSyrCHsir8ZBqPKhqrPns1ReM6pen9b-7U/copy เพื่อทำการ copy Google Forms สำหรับสมัคร Sci band และให้ทำการลิงก์ตัว Google Forms ไปยัง Google sheets  
+จากนั้นให้ทำการเปิดลิงก์ https://console.cloud.google.com เพื่อเปิดใช้งาน Google sheets API
+
 # Download android studio และ emulator
 ลิงก์สำหรับ Download android studio เพื่อใช้งาน emulator: https://developer.android.com/studio  
 หลัง download android studio เสร็จแล้วนั้นให้ทำการ install emulator โดยแนะนำ emulator ที่มีขนาดหน้าจอ 1080 x 2400 เพื่อให้การแสดงผล UI เป็นไปอย่างเที่ยงตรงมากที่สุด
+
+
 
 
 # Run project
