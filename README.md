@@ -52,8 +52,13 @@ Manual / Instructions for your projects starts here !
 
 
 - เปิดใช้งาน Google Sheets API ที่: https://console.cloud.google.com โดยการ new project -> Navigation menu -> APIs & Services -> Enabled APIs & Services -> ค้นหา Google sheets และทำการ enable Google Sheets API
+  ![image](https://github.com/user-attachments/assets/c3112879-7c6b-45b9-b7e7-a9ec3788ce85)
+ ![image](https://github.com/user-attachments/assets/0c5ca706-68a5-4139-88ae-d4aeefce9c9f)
+
+
 
 - เปิดใช้งาน Service account เพื่อใช้งาน Google Sheets API โดยกลับไปที่ Navigation menu -> IAM & Admin -> Servies account -> Create service account -> กรอก Service account name และกด done
+![image](https://github.com/user-attachments/assets/66d62f9f-0cdd-4bce-bb0f-ca1f1be77d45)
 
 - Download Service account credentials ลงเครื่องโดยกดที่ Service account email ที่หน้า Service account -> Keys -> Add key -> Create new key -> เลือก JSON Format -> Create และบันทึกไฟล์ลงเครื่อง
 
