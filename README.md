@@ -23,28 +23,26 @@ Manual / Instructions for your projects starts here !
 - ติดตั้ง dependencies สำหรับ backend ด้วยคำสั่ง `cd backend` และ `npm install`
 - ทำ Database migration ด้วยคำสั่ง `npx prisma migrate dev -name init` ภายใต้ folder backend
 - seed ข้อมูล user ใน database ด้วยคำสั่ง `npx prisma db seed` ภายใต้ folder backend เพื่อให้สามารถ login เข้าสู่ระบบได้
+
+
+
 # การ Setup third library API
-1. clerk และ discord
-คู่มือ Setup Clerk และ Discord API: https://clerk.com/docs/authentication/social-connections/discord  
 ลิงก์สำหรับ Clerk Dashboard: https://dashboard.clerk.com  
 ลิงก์สำหรับ Discord Developer Protal: https://discord.com/developers/applications
+- Setup Clerk และ Discord API ตามคู่มือ: https://clerk.com/docs/authentication/social-connections/discord  
 
-การเพิ่ม API keys เข้าสู่ระบบ:  
-เข้าสู่ Clerk Dashboard → Configure → Developers → API Keys
 
-คัดลอกค่า:
+- เพิ่ม API keys เข้าสู่ระบบ โดยเข้าสู่ Clerk Dashboard → Configure → Developers → API Keys
 
-- Public key → ใส่ในไฟล์ .env ของ frontend ในตัวแปร `EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY` 
-- Secret key → ใส่ใน .env ของ backend ในตัวแปร `CLERK_SECRET_KEY`
+- Copy Public key ใส่ในไฟล์ .env ของ frontend ในตัวแปร   `EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY` 
 
-- JWKS Public key → ใส่ใน .env ของ backend ในตัวแปร `CLERK_JWT_PUBLIC_KEY`
+- Copy Secret key → ใส่ใน .env ของ backend ในตัวแปร `CLERK_SECRET_KEY`
 
-2. Discord Bot
-ที่หน้า Bot ใน Discord Developer Portal → คัดลอก Token → วางในไฟล์ .env ของ backend ที่ DISCORD_BOT_TOKEN
+- Copy JWKS Public key ใส่ใน .env ของ backend ในตัวแปร `CLERK_JWT_PUBLIC_KEY`
 
-ไปที่ OAuth2 → OAuth2 URL Generator → เลือก Scope เป็น "Bot" → มอบสิทธิ์ "Administrator"
+- Copy Discord bot token เข้าสู่ระบบ โดยเลือกหัวข้อ Bot ใน Discord Developer Portal → คัดลอก Token → วางในไฟล์ .env ของ backend ที่ DISCORD_BOT_TOKEN
 
-คัดลอกลิงก์ที่ได้ → เปิดลิงก์ → เพิ่ม Bot เข้าเซิร์ฟเวอร์ Sci Band
+- เพิ่ม Discord bot เข้าสู่ Discord Server โดยไปที่ OAuth2 → OAuth2 URL Generator → เลือก Scope เป็น "Bot" → มอบสิทธิ์ "Administrator" -> คัดลอกลิงก์ที่ได้ → เปิดลิงก์ → เพิ่ม Bot เข้าเซิร์ฟเวอร์ Sci Band
 
 # Google Forms และ Google sheets
 - คัดลอกฟอร์มสมัคร Sci Band: https://docs.google.com/forms/d/1YQ4yOBQZNrSyrCHsir8ZBqPKhqrPns1ReM6pen9b-7U/copy
