@@ -27,6 +27,7 @@ Manual / Instructions for your projects starts here !
   ![Image](https://github.com/user-attachments/assets/8b559109-66bb-42db-af4d-d123e53aab68)
 # การติดตัดเครื่องมือต่างๆเพื่อใช้งาน
 - ติดตั้ง node.js ***ใข้เวอร์ชั่น 22.14 กันกรณีมีปัญหาหรือเกิดบัคได้***
+  ![Image](https://github.com/user-attachments/assets/7de45923-c4dc-4d0e-bd2f-be8e87aad314)
 - ติดตั้ง Discord ทำการสมัครถ้ายังไม่มี account และทำการตั้งค่า โหมดของผู้พัฒนา ตั้งค่า -> ขั้นสูง(Advanced) -> เปิดโหมดผู้พัฒนา (Developer mode)
   ![Image](https://github.com/user-attachments/assets/a8391847-a378-46b7-a425-b4d573881175)
 - ติดตั้ง postquresql ใช้เวอร์ชั่น 17.5 หรือล่าสุดก็ได้ทำการตั้งค่า password และเปิด pgadmin4 และทำการล็อคอินตามที่ได้ตั้งค่าเอาไว้ จะได้ในลักษณะแบบนี้
