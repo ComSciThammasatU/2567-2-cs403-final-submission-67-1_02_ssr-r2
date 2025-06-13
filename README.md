@@ -268,7 +268,7 @@
   
 # การ set ค่าไฟล์ .env ของ PostgreSQL และ Discord
 - เข้าไปที่โฟลเดอร์ backend
-- คลิกขวาที่โฟลเดอร์ backend -> เลือก 'New File' -> ตั้งชื่อว่า '.env'
+- คลิกขวาที่โฟลเดอร์ backend -> เลือก `New File` -> ตั้งชื่อว่า `.env`
   ![Image](https://github.com/user-attachments/assets/4dc10854-6fce-417c-8363-26ed5cafc4af)
 - ทำการ copy file .env.exmple ลงไปในไฟล์ .env ที่สร้างขึ้น ในรูปคือไฟล์ .env.example
   ![Image](https://github.com/user-attachments/assets/e03c1ded-c9c5-414d-875b-6b193715194e)
@@ -288,7 +288,7 @@
 
 
 **ในส่วนของ frontend ให้ทำขั้นตอนเหมือน backend เพื่อเตรียมทำในขั้นตอนถัดไป**
--คลิกขวาที่โฟลเดอร์ frontend -> เลือก 'New File' -> ตั้งชื่อว่า '.env'
+-คลิกขวาที่โฟลเดอร์ frontend -> เลือก `New File` -> ตั้งชื่อว่า `.env`
 
 
 ![Image](https://github.com/user-attachments/assets/117aaf58-6a7a-454a-9a2b-696c8a278573)
