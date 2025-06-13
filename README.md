@@ -305,7 +305,7 @@
 # วิธีติดตั้ง dependencies และ setup ฐานข้อมูล
 - ติดตั้ง dependencies สำหรับ frontend ด้วยคำสั่ง `cd frontend` และ `npm install`
 - ติดตั้ง dependencies สำหรับ backend ด้วยคำสั่ง `cd backend` และ `npm install`
-- ทำ Database migration ด้วยคำสั่ง `npx prisma migrate dev -name init` ภายใต้ folder backend
+- ทำ Database migration ด้วยคำสั่ง `npx prisma migrate dev --name init` ภายใต้ folder backend
 - seed ข้อมูล user ใน database ด้วยคำสั่ง `npx prisma db seed` ภายใต้ folder backend เพื่อให้สามารถ login เข้าสู่ระบบได้
 
 
@@ -326,9 +326,9 @@
 
 - Copy JWKS Public key ใส่ใน .env ของ backend ในตัวแปร `CLERK_JWT_PUBLIC_KEY`
 
-- Copy Discord bot token เข้าสู่ระบบ โดยเลือกหัวข้อ Bot ใน Discord Developer Portal → คัดลอก Token → วางในไฟล์ .env ของ backend ที่ DISCORD_BOT_TOKEN
+- Copy Discord bot token โดยไปที่ Discord Developer Protal เลือกหัวข้อ Bot ใน Discord Developer Portal → คัดลอก Token → วางในไฟล์ .env ของ backend ที่ DISCORD_BOT_TOKEN
   ![image](https://github.com/user-attachments/assets/db6866ba-7746-4871-985b-84dd733a078d)
-- ติ๊กถูกในช่อง Presence Intent, Server Members Intent, Message Content Intent เพื่อให้ Discord bot สามารถจัดการผู้ใช้ภายใน Server ได้ และกด Save Changes
+- ติ๊กถูกในช่อง PRESENSE INTENT, SERVER MEMBRES INTENT, MESSAGE CONTENT INTENT เพื่อให้ Discord bot สามารถจัดการผู้ใช้ภายใน Server ได้ และกด Save Changes
   ![image](https://github.com/user-attachments/assets/c479f0f9-a4fe-45db-b925-89bd7a1beccb)
 
 - เพิ่ม Discord bot เข้าสู่ Discord Server โดยไปที่ OAuth2 → OAuth2 URL Generator → เลือก Scope เป็น "Bot"
@@ -340,6 +340,8 @@
 - คัดลอกลิงก์ที่ได้ → เปิดลิงก์ → เพิ่ม Bot เข้าเซิร์ฟเวอร์ Sci Band
 
   ![image](https://github.com/user-attachments/assets/e93a32dc-aab0-484d-a83b-f46bb261198e)
+  ![image](https://github.com/user-attachments/assets/30450af7-ea4f-4089-b952-2b225a862719)
+
 
 
 # การ Setup Google Forms และ Google sheets
@@ -359,12 +361,18 @@
 ![image](https://github.com/user-attachments/assets/66d62f9f-0cdd-4bce-bb0f-ca1f1be77d45)
 
 - Download Service account credentials ลงเครื่องโดยกดที่ Service account email ที่หน้า Service account -> Keys -> Add key -> Create new key -> เลือก JSON Format -> Create และบันทึกไฟล์ลงเครื่อง
+  ![image](https://github.com/user-attachments/assets/30456cd7-c7aa-4d39-9af7-f394a056bbec)
+
 
 - เปิดไฟล์ Service account credentials และคัดลอกเนื้อหาไฟล์ทั้งหมดใส่ใน .env ของ backend ในตัวแปร `GOOGLE_APPLICATION_CREDENTIALS`
 
-- ให้สิทธ์ Service account ในการอ่านข้อมูล Google sheets โดยการคัดลอก Service account email -> ไปยังหน้่า Google Sheets -> แชร์ -> เพิ่มสิทธิ์โดยการวาง Service account email -> กดส่ง
+- ให้สิทธ์ Service account ในการอ่านข้อมูล Google Sheets โดยการคัดลอก Service account email -> ไปยังหน้่า Google Sheets -> แชร์ -> เพิ่มสิทธิ์โดยการวาง Service account email -> กดส่ง
+  ![image](https://github.com/user-attachments/assets/a717c5ef-b0cc-4a8c-b33a-a3e6bb3f68f5)
 
-- copy Google Sheets ID โดยการเปิด Google Sheets ซึ่ง ID จะอยู่ที่ URL หลัง path d/
+
+- copy Google Sheets ID ซึ่ง ID จะอยู่ที่ URL หลัง path d/
+  ![image](https://github.com/user-attachments/assets/4161d417-f60c-4f63-acb7-d5f0e3c901d9)
+
 
 - นำ Google Sheets Id ใส่ใน .env ของ backend ในตัวแปร `GOOGLE_SHEET_ID`
 
