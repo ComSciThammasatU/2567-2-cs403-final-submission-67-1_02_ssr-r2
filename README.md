@@ -18,25 +18,32 @@ Manual / Instructions for your projects starts here !
 - เป็นแอปพลิเคชันช่วยในการแก้ไขปัญหาเรื่องการสับสนระหว่างการขึ้นแสดง ผู้เล่นไม่รู้คิวของตัวเอง
 - เป็นแอปพลิเคชันช่วยในการจัดการปัญหาเรื่องกลุ่ม line ที่เยอะและมีจำนวนมากในแต่ละงานจะสร้างใหม่ตลอด
 - ใช้เทคโนโลยีหลักๆคือ Reac Native, NestJS และ PostgreSQL พร้อมระบบแจ้งเตือนผ่าน แอปพลิเคชัน Discord
-  ![Image](https://github.com/user-attachments/assets/888824ec-47ed-4042-8937-84b41d066106) 
+  ![Image](https://github.com/user-attachments/assets/888824ec-47ed-4042-8937-84b41d066106)
+  
 # วิธี clone repository
 - คัดลอกลิงก์ URL ของ git โดยใช้เป็น https
   ![Image](https://github.com/user-attachments/assets/424be6a2-b257-4d73-9920-f143eff48274)
 - สร้างโฟลเดอร์ไว้สักที่นึงเพื่อรองรับ code ที่จะใช้คำสั่ง `git clone`
 - เปิด cmd หรือ Command Prompt ให้ set path ให้ตรงกับที่โฟลเดอร์ได้สร้างเอาไว้ และใช้คำสั่ง `git clone --URL ของ github-- ตามด้วยชื่อ โฟลเดอร์` เป็นอันเสร็จสมบูรณ์
   ![Image](https://github.com/user-attachments/assets/8b559109-66bb-42db-af4d-d123e53aab68)
+  
 # การติดตั้งเครื่องมือต่างๆเพื่อใช้งาน
 - ติดตั้ง node.js ***ใข้เวอร์ชั่น 22.14 กันกรณีมีปัญหาหรือเกิดบัคได้***
   ลิงก์สำหรับดาวโหลด node.js version 22.14: https://nodejs.org/en/blog/release/v22.14.0
   ![Image](https://github.com/user-attachments/assets/7de45923-c4dc-4d0e-bd2f-be8e87aad314)
+  
   ตรวจสอบว่าใช้งานได้หรือไม่ด้วยคำสั่ง node -v และ npm -v ถ้าใช้งานได้จะขึ้นตามรูปข้างต้น
+  
   ![Image](https://github.com/user-attachments/assets/44dedf99-68e9-41b8-ae7a-5bb922108c9b)
+  
 - ติดตั้ง Discord ทำการสมัครถ้ายังไม่มี account และทำการตั้งค่า โหมดของผู้พัฒนา `ตั้งค่า -> ขั้นสูง(Advanced) -> เปิดโหมดผู้พัฒนา (Developer mode)`
   ลิงก์สำหรับดาวโหลด Discord: https://discord.com/download
   ![Image](https://github.com/user-attachments/assets/a8391847-a378-46b7-a425-b4d573881175)
+  
 - ลิงก์สำหรับดาวโหลด PostgreSQL ทุกเวอร์ชั่น: https://www.enterprisedb.com/downloads/postgres-postgresql-downloads 
   ติดตั้ง PostgreSQL ใช้เวอร์ชั่น 17.5 หรือล่าสุดก็ได้และทำการตั้งค่า password และเปิด pgadmin4 และทำการล็อคอินตามที่ได้ตั้งค่าเอาไว้ จะได้ในลักษณะแบบนี้
   ![Image](https://github.com/user-attachments/assets/6176b696-2250-48c1-8b19-ff3c0baff63d)
+  
 # การ set ค่าไฟล์ .env ของ postgresql และ discord
 - ทำการสร้างไฟล์ .env ในโฟลเดอร์ backend
 - ตั้งค่าฐานข้อมูลให้ถูกต้องตามการตั้งค่าของผู้ใช้งาน ในตัวแปล `DATABASE_URL`
