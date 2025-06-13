@@ -45,7 +45,7 @@ Manual / Instructions for your projects starts here !
   ติดตั้ง PostgreSQL ใช้เวอร์ชั่น 17.5 หรือล่าสุดก็ได้และทำการตั้งค่า password และเปิด pgadmin4 และทำการล็อคอินตามที่ได้ตั้งค่าเอาไว้ จะได้ในลักษณะแบบนี้
   ![Image](https://github.com/user-attachments/assets/6176b696-2250-48c1-8b19-ff3c0baff63d)
   
-# การ set ค่าไฟล์ .env ของ postgresql และ discord
+# การ set ค่าไฟล์ .env ของ PostgreSQL และ Discord
 - เข้าไปที่โฟลเดอร์ backend
 - คลิกขวาที่โฟลเดอร์ backend -> เลือก 'New File' -> ตั้งชื่อว่า '.env'
   ![Image](https://github.com/user-attachments/assets/4dc10854-6fce-417c-8363-26ed5cafc4af)
