@@ -133,8 +133,8 @@ Manual / Instructions for your projects starts here !
 
 
 # Download android studio และ emulator
-ลิงก์สำหรับ Download android studio เพื่อใช้งาน emulator: https://developer.android.com/studio  
-หลัง download android studio เสร็จแล้วนั้นให้ทำการ install emulator โดยแนะนำ emulator ที่มีขนาดหน้าจอ 1080 x 2400 เพื่อให้การแสดงผล UI เป็นไปอย่างเที่ยงตรงมากที่สุด
+- ลิงก์สำหรับ Download android studio เพื่อใช้งาน emulator: https://developer.android.com/studio  
+- หลัง download android studio เสร็จแล้วนั้นให้ทำการ install emulator โดยแนะนำ emulator ที่มีขนาดหน้าจอ 1080 x 2400 เพื่อให้การแสดงผล UI เป็นไปอย่างเที่ยงตรงมากที่สุด
 
 
 
