@@ -30,29 +30,32 @@ Manual / Instructions for your projects starts here !
 # การติดตั้งเครื่องมือต่างๆเพื่อใช้งาน
 - ติดตั้ง node.js ***ใข้เวอร์ชั่น 22.14 กันกรณีมีปัญหาหรือเกิดบัคได้*** 
   ลิงก์สำหรับดาวน์โหลด node.js version 22.14: https://nodejs.org/en/blog/release/v22.14.0
-  
   ![Image](https://github.com/user-attachments/assets/7de45923-c4dc-4d0e-bd2f-be8e87aad314)
   
   ตรวจสอบว่าใช้งานได้หรือไม่ด้วยคำสั่ง node -v และ npm -v ถ้าใช้งานได้จะขึ้นตามรูปข้างต้น
-  
   ![Image](https://github.com/user-attachments/assets/44dedf99-68e9-41b8-ae7a-5bb922108c9b)
   
 - ติดตั้ง Discord ทำการสมัครถ้ายังไม่มี account และทำการตั้งค่า โหมดของผู้พัฒนา `ตั้งค่า -> ขั้นสูง(Advanced) -> เปิดโหมดผู้พัฒนา (Developer mode)`
   ลิงก์สำหรับดาวน์โหลด Discord: https://discord.com/download
-  
   ![Image](https://github.com/user-attachments/assets/a8391847-a378-46b7-a425-b4d573881175)
   
 - ลิงก์สำหรับดาวน์โหลด PostgreSQL ทุกเวอร์ชั่น: https://www.enterprisedb.com/downloads/postgres-postgresql-downloads 
   ติดตั้ง PostgreSQL ใช้เวอร์ชั่น 17.5 หรือล่าสุดก็ได้และทำการตั้งค่า password และเปิด pgadmin4 และทำการล็อคอินตามที่ได้ตั้งค่าเอาไว้ จะได้ในลักษณะแบบนี้
-  
   ![Image](https://github.com/user-attachments/assets/6176b696-2250-48c1-8b19-ff3c0baff63d)
   
 # การ set ค่าไฟล์ .env ของ postgresql และ discord
-- ทำการสร้างไฟล์ .env ในโฟลเดอร์ backend
+- เข้าไปที่โฟลเดอร์ backend
+- คลิกขวาที่โฟลเดอร์ backend -> เลือก 'New File' -> ตั้งชื่อว่า '.env'
+  ![Image](https://github.com/user-attachments/assets/4dc10854-6fce-417c-8363-26ed5cafc4af)
+- ทำการ copy file .env.exmple ลงไปในไฟล์ .env ที่สร้างขึ้น ในรูปคือไฟล์ .env.example
+  ![Image](https://github.com/user-attachments/assets/e03c1ded-c9c5-414d-875b-6b193715194e)
+  ทำการ copy ลงไปใน .env ดังรูป
+  ![Image](https://github.com/user-attachments/assets/1df70269-127c-431b-a169-88243948df70)
 - ตั้งค่าฐานข้อมูลให้ถูกต้องตามการตั้งค่าของผู้ใช้งาน ในตัวแปล `DATABASE_URL`
-- ทำการใส่ user discord ID และ discord username ในตัวแปล `SEED_DISCORD_ID` กับ `SEED_DISCORD_USERNAME` ตามลำดับ
+- ทำการใส่ user Discord ID และ Discord Username ในตัวแปล `SEED_DISCORD_ID` กับ `SEED_DISCORD_USERNAME` ตามลำดับ เพราะ ใช้เพื่อระบุตัวตนเพื่อเข้าใช้งาน ระบบของเราออกแบบให้คนอื่นที่ไม่ใช่สมาชิกจะสามารถใช้งานได้ เลยต้อ
+  งทำการยืนยันตัวตนผ่าน Discord ID และ Discord Username
   ![Image](https://github.com/user-attachments/assets/6f550047-aafa-453e-9ab1-b2967fd6dde6)
-- ใส่ discord server ID ในที่นี้ได้ทำการสร้าง server ให้ผู้ใช้งานคัดลอก ID จากตรงนี้ `1325140885666791495` ซึ่งหน้าตา server จะเป็นแบบนี้ นำไปใส่ในตัวแปร `DISCORD_SERVER_ID`
+- ใส่ discord server ID ในที่นี้ได้ทำการสร้าง server ให้ผู้ใช้งานคัดลอก ID จากตรงนี้ `1325140885666791495` ซึ่งหน้าตา server จะเป็นในรูปแบบนี้ นำไปใส่ในตัวแปร `DISCORD_SERVER_ID`
   ลิงก์สำหรับเข้าร่วม Discord server: https://discord.gg/xD3bBn4Xc7
   ![Image](https://github.com/user-attachments/assets/c89e1e48-b103-4cbc-94b0-60f6d73d83c8)
    
