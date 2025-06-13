@@ -287,7 +287,7 @@
   ![Image](https://github.com/user-attachments/assets/c89e1e48-b103-4cbc-94b0-60f6d73d83c8)
 
 
--ในส่วนของ frontend ให้ทำขั้นตอนเหมือน backend เพื่อเตรียมทำในขั้นตอนถัดไป
+**ในส่วนของ frontend ให้ทำขั้นตอนเหมือน backend เพื่อเตรียมทำในขั้นตอนถัดไป**
 -คลิกขวาที่โฟลเดอร์ frontend -> เลือก 'New File' -> ตั้งชื่อว่า '.env'
 ![Image](https://github.com/user-attachments/assets/117aaf58-6a7a-454a-9a2b-696c8a278573)
 - ทำการ copy file .env.exmple ลงไปในไฟล์ .env ที่สร้างขึ้น ในรูปคือไฟล์ .env.example
