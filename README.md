@@ -16,7 +16,7 @@
 Manual / Instructions for your projects starts here !
 # ระบบจัดการงานแสดงของชุมนุมดนตรี คณะวิทยาศาสตร์และเทคโนโลยี
 - เป็นแอปพลิเคชันช่วยในการแก้ไขปัญหาเรื่องการสับสนระหว่างการขึ้นแสดง ผู้เล่นไม่รู้คิวของตัวเอง
-- เป็นแอปพลิเคชันช่วยในการจัดการปัญหาเรื่องกลุ่ม line ที่เยอะและมีจำนวนมากในแต่ละงานจะสร้างใหม่ตลอด
+- เป็นแอปพลิเคชันช่วยในการจัดการปัญหาเรื่องกลุ่ม line ที่เยอะและมีจำนวนมากในแต่ละงาน
 - ใช้เทคโนโลยีหลักๆคือ Reac Native, NestJS และ PostgreSQL พร้อมระบบแจ้งเตือนผ่าน แอปพลิเคชัน Discord
   ![Image](https://github.com/user-attachments/assets/888824ec-47ed-4042-8937-84b41d066106)
   
@@ -60,7 +60,7 @@ Manual / Instructions for your projects starts here !
   ![Image](https://github.com/user-attachments/assets/6f550047-aafa-453e-9ab1-b2967fd6dde6)
 
   
-  **ระบบของเราออกแบบให้คนที่เป็นสมาชิกเท่านั้นที่สามารถใช้งานได้ เลยต้องทำการยืนยันตัวตนผ่าน Discord ID และ Discord Username**
+  **ระบบของเราออกแบบให้คนที่เป็นสมาชิกชมรมเท่านั้นที่สามารถใช้งานได้ เลยต้องทำการยืนยันตัวตนผ่าน Discord ID และ Discord Username**
 - ใส่ discord server ID ในที่นี้ได้ทำการสร้าง server ให้ผู้ใช้งานคัดลอก ID จากตรงนี้ `1325140885666791495` ซึ่งหน้าตา server จะเป็นในรูปแบบนี้ นำไปใส่ในตัวแปร `DISCORD_SERVER_ID`
   ลิงก์สำหรับเข้าร่วม Discord server: https://discord.gg/xD3bBn4Xc7
   ![Image](https://github.com/user-attachments/assets/c89e1e48-b103-4cbc-94b0-60f6d73d83c8)
