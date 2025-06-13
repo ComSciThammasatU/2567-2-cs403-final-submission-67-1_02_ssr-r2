@@ -247,7 +247,7 @@
   
   ![Image](https://github.com/user-attachments/assets/424be6a2-b257-4d73-9920-f143eff48274)
 - สร้างโฟลเดอร์ไว้สักที่นึงเพื่อรองรับ code ที่จะใช้คำสั่ง `git clone`
-- เปิด cmd หรือ Command Prompt ให้ set path ให้ตรงกับที่โฟลเดอร์ได้สร้างเอาไว้ และใช้คำสั่ง `git clone --URL ของ github-- ตามด้วยชื่อ โฟลเดอร์` เป็นอันเสร็จสมบูรณ์
+- เปิด cmd หรือ Command Prompt ให้ set path ให้ตรงกับที่โฟลเดอร์ได้สร้างเอาไว้ และใช้คำสั่ง `git clone https://github.com/ComSciThammasatU/2567-2-cs403-final-submission-67-1_02_ssr-r2.git ตามด้วยชื่อ โฟลเดอร์` เป็นอันเสร็จสมบูรณ์
   ![Image](https://github.com/user-attachments/assets/8b559109-66bb-42db-af4d-d123e53aab68)
   
 # การติดตั้งเครื่องมือต่างๆเพื่อใช้งาน
@@ -278,7 +278,7 @@
 - ทำการใส่ Discord user ID และ Discord Username ในตัวแปล `SEED_DISCORD_ID` กับ `SEED_DISCORD_USERNAME` ตามลำดับ เพื่อ ใช้เพื่อระบุตัวตนในการข้าใช้งานระบบ
 
   
-  ![Image](https://github.com/user-attachments/assets/6f550047-aafa-453e-9ab1-b2967fd6dde6)
+ ![image](https://github.com/user-attachments/assets/ab1bd4ba-863e-4502-a483-38b5845693a4)
 
   
   **ระบบของเราออกแบบให้คนที่เป็นสมาชิกชมรมเท่านั้นที่สามารถใช้งานได้ เลยต้องทำการยืนยันตัวตนผ่าน Discord ID และ Discord Username**
