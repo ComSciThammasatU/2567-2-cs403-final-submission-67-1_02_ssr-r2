@@ -22,6 +22,8 @@ Manual / Instructions for your projects starts here !
   
 # วิธี clone repository
 - คัดลอกลิงก์ URL ของ git โดยใช้เป็น https
+
+  
   ![Image](https://github.com/user-attachments/assets/424be6a2-b257-4d73-9920-f143eff48274)
 - สร้างโฟลเดอร์ไว้สักที่นึงเพื่อรองรับ code ที่จะใช้คำสั่ง `git clone`
 - เปิด cmd หรือ Command Prompt ให้ set path ให้ตรงกับที่โฟลเดอร์ได้สร้างเอาไว้ และใช้คำสั่ง `git clone --URL ของ github-- ตามด้วยชื่อ โฟลเดอร์` เป็นอันเสร็จสมบูรณ์
@@ -53,6 +55,8 @@ Manual / Instructions for your projects starts here !
   ![Image](https://github.com/user-attachments/assets/1df70269-127c-431b-a169-88243948df70)
 - ตั้งค่าฐานข้อมูลให้ถูกต้องตามการตั้งค่าของผู้ใช้งาน ในตัวแปล `DATABASE_URL`
 - ทำการใส่ user Discord ID และ Discord Username ในตัวแปล `SEED_DISCORD_ID` กับ `SEED_DISCORD_USERNAME` ตามลำดับ เพราะ ใช้เพื่อระบุตัวตนเพื่อเข้าใช้งาน
+
+  
   ![Image](https://github.com/user-attachments/assets/6f550047-aafa-453e-9ab1-b2967fd6dde6)
   **ระบบของเราออกแบบให้คนอื่นที่ไม่ใช่สมาชิกจะสามารถใช้งานได้ เลยต้องทำการยืนยันตัวตนผ่าน Discord ID และ Discord Username**
 - ใส่ discord server ID ในที่นี้ได้ทำการสร้าง server ให้ผู้ใช้งานคัดลอก ID จากตรงนี้ `1325140885666791495` ซึ่งหน้าตา server จะเป็นในรูปแบบนี้ นำไปใส่ในตัวแปร `DISCORD_SERVER_ID`
