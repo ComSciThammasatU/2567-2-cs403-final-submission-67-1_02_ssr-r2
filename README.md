@@ -285,6 +285,14 @@
 - ใส่ discord server ID ในที่นี้ได้ทำการสร้าง server ให้ผู้ใช้งานคัดลอก ID จากตรงนี้ `1325140885666791495` ซึ่งหน้าตา server จะเป็นในรูปแบบนี้ นำไปใส่ในตัวแปร `DISCORD_SERVER_ID`
   ลิงก์สำหรับเข้าร่วม Discord server: https://discord.gg/xD3bBn4Xc7
   ![Image](https://github.com/user-attachments/assets/c89e1e48-b103-4cbc-94b0-60f6d73d83c8)
+
+
+-ในส่วนของ frontend ให้ทำขั้นตอนเหมือน backend เพื่อเตรียมทำในขั้นตอนถัดไป
+-คลิกขวาที่โฟลเดอร์ frontend -> เลือก 'New File' -> ตั้งชื่อว่า '.env'
+![Image](https://github.com/user-attachments/assets/117aaf58-6a7a-454a-9a2b-696c8a278573)
+- ทำการ copy file .env.exmple ลงไปในไฟล์ .env ที่สร้างขึ้น ในรูปคือไฟล์ .env.example
+![Image](https://github.com/user-attachments/assets/b776f4c3-2445-47c4-9965-45a72f7f3e2d)
+
    
 # วิธีติดตั้ง dependencies และ setup ฐานข้อมูล
 - ติดตั้ง dependencies สำหรับ frontend ด้วยคำสั่ง `cd frontend` และ `npm install`
