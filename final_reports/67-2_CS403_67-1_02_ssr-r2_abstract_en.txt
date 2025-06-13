@@ -1,0 +1,28 @@
+SCI BAND MUSIC PERFORMANCE MANAGEMENT SYSTEM 
+ระบบจัดการงานแสดงของชุมนุมดนตรี คณะวิทยาศาสตร์และเทคโนโลยี
+
+                  ABSTRACT
+	This project involves the development of a music performance 
+management system for the SCI BAND club under the Faculty of Science and 
+Technology, Thammasat University, Rangsit Campus. The primary issues addressed 
+include disorganized communication within multiple LINE chat groups and confusion 
+caused by last-minute performer swaps during live events, which often disrupted the 
+order of performances. 
+	To solve these problems, a mobile application was developed using 
+React Native, NestJS, and PostgreSQL. The system facilitates the management of 
+member information, performance order, song queues, and real-time notifications via 
+Discord on the event day. 
+	The system emphasizes organized performance scheduling and 
+structured data management, enabling members and organizers to monitor event 
+progress in real-time. It also supports integration with Google Sheets, which stores 
+data from Google Forms used for club registration, allowing the system to restrict 
+access exclusively to active SCI BAND members. Furthermore, the system includes 
+functionality to deactivate accounts for members who have graduated. 
+	This system enhances the overall efficiency of SCI BAND's event 
+management, contributing to smoother and more professional musical performances. 
+It reduces confusion stemming from poor communication, improves stakeholder 
+satisfaction—including members, event organizers, and audiences—and fosters 
+effective collaboration within the club’s team. 
+
+Keywords: SCI BAND, music performance, music management system, 
+communication
