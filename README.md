@@ -306,7 +306,7 @@
 - ติดตั้ง dependencies สำหรับ frontend ด้วยคำสั่ง `cd frontend` และ `npm install`
 - ติดตั้ง dependencies สำหรับ backend ด้วยคำสั่ง `cd backend` และ `npm install`
 - ทำ Database migration ด้วยคำสั่ง `npx prisma migrate dev --name init` ภายใต้ folder backend
-- seed ข้อมูล user ใน database ด้วยคำสั่ง `npx prisma db seed` ภายใต้ folder backend เพื่อให้สามารถ login เข้าสู่ระบบได้
+- seed ข้อมูล user ใน database ด้วยคำสั่ง `npx prisma db seed` ภายใต้ folder backend เพื่อให้สามารถ login เข้าสู่ระบบได้ โดยคำสั่งนี้จะเพิ่มข้อมูล Discord username และ Discord Id ที่ได้ใส่ไว้ใน .env ของ frontend เข้าสู่ฐานข้อมูลและกำหนดสิทธิ์ให้เป็น Backstage และ System admin เพื่อความสะดวกในการใช้งานในตอนต้น
 
 
 
@@ -406,4 +406,10 @@
 - เริ่มการ run frontend ด้วยคำสั่ง `cd fronend` และ `npm run android` โดยต้องเปิด emulator ไว้ก่อนใช้งานคำสั่งเท่านั้น โดการ Run ครั้งแรกจะใช้เวลานานกว่าปกติ โดยหลัง run เสร็จตัว App จะเปิดขึ้นมาดังภาพ
   ![image](https://github.com/user-attachments/assets/3a7b9fb7-8a94-450a-99c6-4a6a6cca9e13)
 
-- เริ่มการ run backend ด้วยคำสั่ง `cd backend` และ `npm run start:dev`
+- เริ่มการ run backend ด้วยคำสั่ง `cd backend` และ `npm run start:dev` และรอการ compile โดยหลัง comiple เสร็จแล้วนั้นจะเป็นดังรูป
+  ![image](https://github.com/user-attachments/assets/369994ef-7545-4abc-8dcb-45e5514935fd)
+
+- จากนั้นจึงกลับมาที่ emulator และทำการ login ด้วย Discord account ที่ได้ seed ไว้ใน database หากทำถูกต้องจะปรากฏหน้า Main menu ดังรูป
+  ![image](https://github.com/user-attachments/assets/5aea30cc-4e35-4ff6-bfe5-44664b79d637)
+
+
