@@ -58,6 +58,8 @@ Manual / Instructions for your projects starts here !
 
   
   ![Image](https://github.com/user-attachments/assets/6f550047-aafa-453e-9ab1-b2967fd6dde6)
+
+  
   **ระบบของเราออกแบบให้คนอื่นที่ไม่ใช่สมาชิกจะสามารถใช้งานได้ เลยต้องทำการยืนยันตัวตนผ่าน Discord ID และ Discord Username**
 - ใส่ discord server ID ในที่นี้ได้ทำการสร้าง server ให้ผู้ใช้งานคัดลอก ID จากตรงนี้ `1325140885666791495` ซึ่งหน้าตา server จะเป็นในรูปแบบนี้ นำไปใส่ในตัวแปร `DISCORD_SERVER_ID`
   ลิงก์สำหรับเข้าร่วม Discord server: https://discord.gg/xD3bBn4Xc7
