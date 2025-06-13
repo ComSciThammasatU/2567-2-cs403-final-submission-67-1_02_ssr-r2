@@ -1,4 +1,4 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/w8H8oomW)
+![image](https://github.com/user-attachments/assets/f2fca1bc-b9e5-47e7-967c-2cf8a29352b1)[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/w8H8oomW)
 **<ins>Note</ins>: Students must update this `README.md` file to be an installation manual or a README file for their own CS403 projects.**
 
 **รหัสโครงงาน:** ระบุรหัสโครงงานที่นี่ เช่น 67-1_02_ssr-r2
@@ -292,6 +292,8 @@
 ![Image](https://github.com/user-attachments/assets/117aaf58-6a7a-454a-9a2b-696c8a278573)
 - ทำการ copy file .env.exmple ลงไปในไฟล์ .env ที่สร้างขึ้น ในรูปคือไฟล์ .env.example
 ![Image](https://github.com/user-attachments/assets/b776f4c3-2445-47c4-9965-45a72f7f3e2d)
+ทำการ copy ลงไปใน .env ดังรูป
+![Image](https://github.com/user-attachments/assets/296504fe-8aae-4e0a-b36f-5ea1084b9d25)
 
    
 # วิธีติดตั้ง dependencies และ setup ฐานข้อมูล
