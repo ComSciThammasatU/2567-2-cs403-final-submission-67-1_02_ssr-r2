@@ -289,10 +289,16 @@
 
 **ในส่วนของ frontend ให้ทำขั้นตอนเหมือน backend เพื่อเตรียมทำในขั้นตอนถัดไป**
 -คลิกขวาที่โฟลเดอร์ frontend -> เลือก 'New File' -> ตั้งชื่อว่า '.env'
+
+
 ![Image](https://github.com/user-attachments/assets/117aaf58-6a7a-454a-9a2b-696c8a278573)
 - ทำการ copy file .env.exmple ลงไปในไฟล์ .env ที่สร้างขึ้น ในรูปคือไฟล์ .env.example
+
+
 ![Image](https://github.com/user-attachments/assets/b776f4c3-2445-47c4-9965-45a72f7f3e2d)
 ทำการ copy ลงไปใน .env ดังรูป
+
+
 ![Image](https://github.com/user-attachments/assets/296504fe-8aae-4e0a-b36f-5ea1084b9d25)
 
    
