@@ -8,9 +8,9 @@ import {
     Post,
     UseGuards
 } from '@nestjs/common'
-import { PlayerService } from 'src/players/player.service'
-import { BackstageGuard } from 'src/guards/backstage.guard'
-import { PlayerDto, PlayerType } from 'src/players/dto/player.dto'
+import { PlayerService } from '../players/player.service'
+import { BackstageGuard } from '../guards/backstage.guard'
+import { PlayerDto, PlayerType } from '../players/dto/player.dto'
 import {
     SwaggerAssignPlayerToSong,
     SwaggerFindAllAssignedPlayersInSong,

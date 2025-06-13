@@ -81,7 +81,7 @@ export default function Card({ currentSongId }: CardPropsType) {
 
   if (isLoading) {
     return (
-      <ActivityIndicator size="large" style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }} />
+      <ActivityIndicator size='large' style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }} />
     )
   }
 
@@ -114,7 +114,7 @@ export default function Card({ currentSongId }: CardPropsType) {
       {
         songs.length === 0 ?
           <View style={{ width: '100%', alignItems: 'center', marginTop: 40 }}>
-          <Text variant="titleLarge" style={{ color: '#999' }}>
+          <Text variant='titleLarge' style={{ color: '#999' }}>
             ไม่มีคิวเพลงขณะนี้
           </Text>
         </View> :

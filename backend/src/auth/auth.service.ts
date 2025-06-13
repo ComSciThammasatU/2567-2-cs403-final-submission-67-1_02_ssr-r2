@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common'
-import { PrismaService } from 'src/prisma.service'
+import { PrismaService } from '../prisma.service'
 import { createClerkClient, verifyToken } from '@clerk/backend'
-import { UnauthorizedException } from 'src/exceptions/custom-exception'
+import { UnauthorizedException } from '../exceptions/custom-exception'
 
 const clerkClient = createClerkClient({ secretKey: process.env.CLERK_SECRET_KEY })
 

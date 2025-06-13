@@ -1,5 +1,5 @@
-import { Injectable, Logger } from '@nestjs/common'
-import { PrismaService } from 'src/prisma.service'
+import { Injectable } from '@nestjs/common'
+import { PrismaService } from '../prisma.service'
 import { PlayerType } from './dto/player.dto'
 
 @Injectable()

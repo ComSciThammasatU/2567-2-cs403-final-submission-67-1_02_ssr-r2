@@ -1,7 +1,7 @@
 import { applyDecorators } from "@nestjs/common"
 import { ApiOkResponse, ApiOperation } from "@nestjs/swagger"
 import { GetUserDtoResponse } from "../dto/get-user.dto"
-import { UnauthorizedResponse } from "src/decorators/api-responses.decorator"
+import { UnauthorizedResponse } from "../../decorators/api-responses.decorator"
 
 export const SwaggerFindAllUsers = () => {
     return applyDecorators(

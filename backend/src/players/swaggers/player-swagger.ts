@@ -1,7 +1,7 @@
 import { applyDecorators } from "@nestjs/common"
 import { ApiCreatedResponse, ApiOkResponse, ApiOperation } from "@nestjs/swagger"
 import { GetAssignedPlayResponseDto, GetUnassignedPlayResponseDto } from "../dto/get-player.dto"
-import { ForbiddenBackstageResponse, UnauthorizedResponse } from "src/decorators/api-responses.decorator"
+import { ForbiddenBackstageResponse, UnauthorizedResponse } from "../../decorators/api-responses.decorator"
 
 export const SwaggerFindAllAssignedPlayersInSong = () => {
     return applyDecorators(

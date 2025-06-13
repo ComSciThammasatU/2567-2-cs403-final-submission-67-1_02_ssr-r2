@@ -18,7 +18,7 @@ export default function Login() {
     <ImageBackground
       source={require('@/assets/images/bg.jpg')}
       style={styles.background}
-      resizeMode="cover"
+      resizeMode='cover'
     >
       <View style={styles.overlay}>
         <Text style={styles.title}>SCI BAND</Text>

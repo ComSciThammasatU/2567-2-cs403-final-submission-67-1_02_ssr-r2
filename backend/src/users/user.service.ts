@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common'
 import { UserRole } from '@prisma/client'
-import { DiscordService } from 'src/discord/discord.service'
-import { PrismaService } from 'src/prisma.service'
+import { DiscordService } from '../discord/discord.service'
+import { PrismaService } from '../prisma.service'
 
 type NewUserType = {
   discordId: string,

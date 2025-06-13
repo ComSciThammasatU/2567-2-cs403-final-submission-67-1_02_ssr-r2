@@ -23,26 +23,26 @@ export class GetEventsListResponseDto {
 
 export class GetEventResponseDto {
     @ApiProperty({example: 'f81d4fae-7dec-11d0-a765-00a0c91e6bf6'})
-    eventId: string;
+    eventId: string
 
     @ApiProperty({example: 'งานเปิดบ้าน'})
-    eventName: string;
+    eventName: string
 
     @ApiProperty()
-    eventDate: Date;
+    eventDate: Date
 
     @ApiProperty()
-    startTime: Date;
+    startTime: Date
 
     @ApiProperty()
-    endTime: Date;
+    endTime: Date
 
     @ApiProperty({example: 'ชุดนักศึกษา'})
-    dressCode: string;
+    dressCode: string
 
     @ApiProperty({example: 'UPCOMING'})
     status: Event['status']
 
     @ApiProperty({example: 'นัดหมาย 14.00 น.'})
-    additionalDetails: string;
+    additionalDetails: string
 }

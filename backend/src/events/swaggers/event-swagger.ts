@@ -1,7 +1,11 @@
 import { applyDecorators } from "@nestjs/common"
 import { ApiConflictResponse, ApiCreatedResponse, ApiOkResponse, ApiOperation } from "@nestjs/swagger"
 import { GetEventResponseDto, GetEventsListResponseDto } from "../dto/get-event.dto"
-import { BadRequestResponse, ForbiddenBackstageResponse, UnauthorizedResponse } from "src/decorators/api-responses.decorator"
+import { 
+    BadRequestResponse, 
+    ForbiddenBackstageResponse, 
+    UnauthorizedResponse 
+} from "../../decorators/api-responses.decorator"
 import { GetCurrentSongResponseDto } from "../dto/get-current-song.dto"
 
 export const SwaggerFindAllEvents = () => {

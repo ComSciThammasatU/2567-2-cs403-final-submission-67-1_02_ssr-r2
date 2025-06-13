@@ -1,7 +1,7 @@
 import { ApiCreatedResponse, ApiOkResponse, ApiOperation, ApiResponse } from "@nestjs/swagger"
 import { applyDecorators } from "@nestjs/common"
 import { GetSongDetailResponseDto, GetSongsListResponseDto } from "../dto/song.dto"
-import { ForbiddenBackstageResponse, UnauthorizedResponse } from "src/decorators/api-responses.decorator"
+import { ForbiddenBackstageResponse, UnauthorizedResponse } from "../../decorators/api-responses.decorator"
 
 export const SwaggerFindAllSongs = () => {
     return applyDecorators(

@@ -68,7 +68,7 @@ const NotiModal = ({ isLastSong, songName }: NotiModalPropsType) => {
                     <KeyboardAvoidingView
                         behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
                     >
-                        <ScrollView keyboardShouldPersistTaps="handled">
+                        <ScrollView keyboardShouldPersistTaps='handled'>
                             <Text style={{ fontWeight: 'bold', fontSize: 16, marginBottom: 8 }}>
                                 แจ้งเตือน player เพลงถัดไป (เพลง {songName})
                             </Text>

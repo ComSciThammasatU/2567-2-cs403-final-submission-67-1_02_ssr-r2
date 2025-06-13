@@ -34,9 +34,9 @@ const SongQueueRun = ({ songs, currentSong }: SongQueueRunPropsType ) => {
           <View style={{ flexDirection: 'row', alignItems: 'center' }}>
             {isCurrent && (
               <MaterialIcons
-                name="volume-up"
+                name='volume-up'
                 size={20}
-                color="#4CAF50"
+                color='#4CAF50'
                 style={{ marginRight: 8 }}
               />
             )}

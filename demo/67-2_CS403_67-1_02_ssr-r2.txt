@@ -1,0 +1,3 @@
+https://drive.google.com/drive/u/0/folders/1iUcpphtm0oCGeyZNfADPz_2UyFPPkBNi
+
+เนื่องจากขนาดไฟล์เกิน 100 Mb จึงไม่สามารถ upload VDO ลง github ได้

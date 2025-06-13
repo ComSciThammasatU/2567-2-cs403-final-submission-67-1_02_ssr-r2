@@ -4,8 +4,8 @@ import { AdminService } from './admin.service'
 import { TransferAdminRequestDto } from './dto/transfer-admin.dto'
 import { AdminGuard } from '../guards/admin.guard'
 import { UserService } from '../users/user.service'
-import { GoogleSheetsService } from 'src/google-sheets/google-sheets.service'
-import { DiscordService } from 'src/discord/discord.service'
+import { GoogleSheetsService } from '../google-sheets/google-sheets.service'
+import { DiscordService } from '../discord/discord.service'
 import { SwaggerActivateUser, SwaggerDeactivateUser, SwaggerTransferAdminPrivileges } from './swaggers/admin-swagger'
 
 @Controller('admin')

@@ -1,6 +1,6 @@
 import { applyDecorators } from '@nestjs/common'
 import { ApiCreatedResponse, ApiOperation, ApiResponse } from '@nestjs/swagger'
-import { ForbiddenSystemAdminResponse, UnauthorizedResponse } from 'src/decorators/api-responses.decorator'
+import { ForbiddenSystemAdminResponse, UnauthorizedResponse } from '../../decorators/api-responses.decorator'
 
 export const SwaggerActivateUser = () => {
     return applyDecorators(

@@ -54,16 +54,16 @@ const Profile = () => {
 
       <View style={styles.card}>
         <ReadOnlyField
-          label="ชื่อ-นามสกุล"
+          label='ชื่อ-นามสกุล'
           value={`${user.firstName ?? ''} ${user.lastName ?? ''}`}
         />
-        <ReadOnlyField label="ชื่อเล่น" value={user.nickName ?? ''} />
+        <ReadOnlyField label='ชื่อเล่น' value={user.nickName ?? ''} />
         <ReadOnlyField
-          label="ตำแหน่ง"
+          label='ตำแหน่ง'
           value={user.roles?.map((r) => r.role).join(', ') ?? ''}
         />
-        <ReadOnlyField label="discord ID" value={user.discordId ?? ''} />
-        <ReadOnlyField label="discord username" value={user.discordUsername ?? ''} />
+        <ReadOnlyField label='discord ID' value={user.discordId ?? ''} />
+        <ReadOnlyField label='discord username' value={user.discordUsername ?? ''} />
 
         <View style={styles.buttonWrapper}>
           <Button onPress={handleLogout}>

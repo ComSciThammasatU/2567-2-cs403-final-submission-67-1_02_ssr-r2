@@ -1,5 +1,5 @@
-import axios from "@/libs/axios"
-import { SongType, SongListType } from "@/types/song"
+import axios from '@/libs/axios'
+import { SongType, SongListType } from '@/types/song'
 
 
 export const getSongListService = async (eventId: string) => {

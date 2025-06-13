@@ -38,7 +38,7 @@ const Header = () => {
 
             {event && (
                 <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 4, gap: 8 }}>
-                    <MaterialIcons name="event" size={24} color="#4CAF50" />
+                    <MaterialIcons name='event' size={24} color='#4CAF50' />
                     <View>
                         <Text style={{ fontSize: 20, fontWeight: 'bold', color: 'black' }}>
                             {event.eventName}

@@ -28,7 +28,7 @@ const useAssignPlayer = () => {
             queryClient.invalidateQueries({ queryKey: ['unassignedPlayerList'] })
 
         } catch (error) {
-            console.error("Error assigning players: ", error)
+            console.error('Error assigning players: ', error)
             alert('Cannot add more players')
 
         }

@@ -1,63 +1,63 @@
-import { ApiProperty } from "@nestjs/swagger";
+import { ApiProperty } from "@nestjs/swagger"
 
 
 export class GetSongsListResponseDto {
   @ApiProperty({example: true})
-  isAssigned: boolean;
+  isAssigned: boolean
 
   @ApiProperty({example: '2b232072-6b3c-4044-98e8-6c6655a2ff91'})
-  songId: string;
+  songId: string
 
   @ApiProperty({example: 'attention'})
-  songName: string;
+  songName: string
 
   @ApiProperty({example: 1})
-  songOrder: number;
+  songOrder: number
 
   @ApiProperty({example: 'C'})
-  songKey: string;
+  songKey: string
 }
 
 export class GetSongDetailResponseDto {
   @ApiProperty({ example: 1 })
-  songOrder: number;
+  songOrder: number
 
   @ApiProperty({ example: '2b232072-6b3c-4044-98e8-6c6655a2ff91' })
-  eventId: string;
+  eventId: string
 
   @ApiProperty({ example: '3c232072-6b3c-4044-98e8-6c6655a2ff92' })
-  songId: string;
+  songId: string
 
   @ApiProperty({ example: 'Attention' })
-  songName: string;
+  songName: string
 
   @ApiProperty({ example: 'รอ data ปิด' })
-  songDescription: string;
+  songDescription: string
 
   @ApiProperty({ example: 'C' })
-  songKey: string;
+  songKey: string
 
   @ApiProperty({ example: 'https://youtube.com/watch?v=example' })
-  songReference: string;
+  songReference: string
 
   @ApiProperty({ example: '2' })
-  totalVocalist: string;
+  totalVocalist: string
 
   @ApiProperty({ example: '1' })
-  totalGuitarist: string;
+  totalGuitarist: string
 
   @ApiProperty({ example: '1' })
-  totalDrummer: string;
+  totalDrummer: string
 
   @ApiProperty({ example: '1' })
-  totalKeyboardist: string;
+  totalKeyboardist: string
 
   @ApiProperty({ example: '0' })
-  totalExtra: string;
+  totalExtra: string
 
   @ApiProperty({ example: '1' })
-  totalPercussionist: string;
+  totalPercussionist: string
 
   @ApiProperty({ example: '1' })
-  totalBassist: string;
+  totalBassist: string
 }

@@ -1,7 +1,6 @@
 import React, { ReactNode } from 'react'
 import { ButtonProps, Button as RnButton } from 'react-native-paper'
 import { useAppTheme } from '@/hooks/use-theme'
-import { StyleSheet } from 'react-native'
 
 type ButtonPropsType = {
   children: ReactNode
@@ -32,7 +31,7 @@ const Button = ({ variant = 'primary', children, style, disabled, ...props }: Bu
 
   return (
     <RnButton
-      mode="contained"
+      mode='contained'
       buttonColor={backgroundColor}
       textColor={textColor}
       // disabled={disabled}

@@ -3,9 +3,9 @@ import { AdminController } from './admin.controller'
 import { AdminService } from './admin.service'
 import { PrismaService } from '../prisma.service'
 import { AdminGuard } from '../guards/admin.guard'
-import { UserService } from 'src/users/user.service'
-import { GoogleSheetsService } from 'src/google-sheets/google-sheets.service'
-import { DiscordService } from 'src/discord/discord.service'
+import { UserService } from '../users/user.service'
+import { GoogleSheetsService } from '../google-sheets/google-sheets.service'
+import { DiscordService } from '../discord/discord.service'
 
 @Module({
   controllers: [AdminController],

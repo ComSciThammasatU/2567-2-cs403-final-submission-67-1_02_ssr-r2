@@ -1,34 +1,34 @@
-import { ApiProperty } from "@nestjs/swagger";
+import { ApiProperty } from "@nestjs/swagger"
 
 export class GetPlayerResponseDto {
     @ApiProperty({ example: '2b232072-6b3c-4044-98e8-6c6655a2ff91' })
-    userId: string;
+    userId: string
 
     @ApiProperty({ example: 'John' })
-    firstName: string;
+    firstName: string
 
     @ApiProperty({ example: 'Doe' })
-    lastName: string;
+    lastName: string
 
     @ApiProperty({ example: 'Johnny' })
-    nickName: string;
+    nickName: string
 
     @ApiProperty({ example: '123456789012345678' })
-    discordId: string;
+    discordId: string
 
     @ApiProperty({ example: 'johndoe#1234' })
-    discordUsername: string;
+    discordUsername: string
 
     @ApiProperty({ example: true })
-    isActive: boolean;
+    isActive: boolean
 }
 
 export class GetAssignedPlayResponseDto {
     @ApiProperty({ example: 2 })
-    totalPlayer: number;
+    totalPlayer: number
 
     @ApiProperty({ example: 1 })
-    currentPlayer: number;
+    currentPlayer: number
 
     @ApiProperty({
         type: 'array',
@@ -46,14 +46,14 @@ export class GetAssignedPlayResponseDto {
         }
     })
     players: Array<{
-        userId: string;
-        firstName: string;
-        lastName: string;
-        nickName: string;
-        discordId: string;
-        discordUsername: string;
-        isActive: boolean;
-    }>;
+        userId: string
+        firstName: string
+        lastName: string
+        nickName: string
+        discordId: string
+        discordUsername: string
+        isActive: boolean
+    }>
 }
 
 export class GetUnassignedPlayResponseDto {

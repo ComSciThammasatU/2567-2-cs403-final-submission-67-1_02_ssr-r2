@@ -10,11 +10,11 @@ import {
   UseGuards,
   Request,
 } from '@nestjs/common'
-import { SongService } from 'src/songs/song.service'
-import { BackstageGuard } from 'src/guards/backstage.guard'
-import { NotFoundException } from 'src/exceptions/custom-exception'
+import { SongService } from '../songs/song.service'
+import { BackstageGuard } from '../guards/backstage.guard'
+import { NotFoundException } from '../exceptions/custom-exception'
 import { Request as ExpressRequest } from 'express'
-import { DiscordService } from 'src/discord/discord.service'
+import { DiscordService } from '../discord/discord.service'
 import { CreateAndUpdateSongRequestDto } from './dto/create-update-song.dto'
 import { ReorderSongRequestDto } from './dto/reorder-song.dto'
 import {
