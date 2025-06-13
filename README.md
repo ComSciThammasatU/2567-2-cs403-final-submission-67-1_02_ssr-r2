@@ -376,15 +376,34 @@
 
 - นำ Google Sheets Id ใส่ใน .env ของ backend ในตัวแปร `GOOGLE_SHEET_ID`
 
+# การ Setup IPv4 เพื่อเชื่อม frontend และ backend
+เนื่องจาก frontend run อยู่บน emulator และ backend run อยู่บนเครื่องของเรา จึงเปรียบเสมือนกับ frontend และ backend นั้น run อยู่บนคนละเครื่องกัน frontend จึงต้องรู้ที่อยู่ IPv4 ของ backend โดยการเปิด terminal และใช้คำสั่น `ipconfig`
+จากนั้นทำการ Coy ค่า IPv4 ตามรูป
+![image](https://github.com/user-attachments/assets/87654e7f-6e89-4a27-9f3d-d6428eb5544c)
+นำค่าที่ได้ใส่ไปยังไฟล์ .env ของ frontend ในตัวแปร `EXPO_PUBLIC_API_BASE_URL` ดังรูป
+![image](https://github.com/user-attachments/assets/6d3e0640-669f-4698-be3d-684bb068202d)
+
+
 
 # Download android studio และ emulator
 - ลิงก์สำหรับ Download android studio เพื่อใช้งาน emulator: https://developer.android.com/studio  
-- หลัง download android studio เสร็จแล้วนั้นให้ทำการ install emulator โดยแนะนำ emulator ที่มีขนาดหน้าจอ 1080 x 2400 เพื่อให้การแสดงผล UI เป็นไปอย่างเที่ยงตรงมากที่สุด
+- หลัง download android studio เสร็จแล้วนั้นให้ทำการ install emulator โดยการเลือก Device manager ทางด้านขวา -> + -> Create Virtual Device
+  ![image](https://github.com/user-attachments/assets/47186ab8-3c4f-4cf8-b10c-1efcca19df10)
+
+-  เลือก Medium Phone หรือ emulator ที่มีขนาดหน้าจอเท่ากับหรือใกล้เคียง 1080 x 2400 pixels เพื่อให้การแสดงผล UI เป็นไปอย่างเที่ยงตรงมากที่สุด -> Next -> Finish
+  ![image](https://github.com/user-attachments/assets/68fd13e4-2873-42c7-8e0f-ee7f6bfff01d)
+
+- Run emulator โดยการกดไอคอน ▷ โดยการ Run ครั้งแรกจะใช้เวลานานกว่าปกติ
+  ![image](https://github.com/user-attachments/assets/f373abaa-1321-4278-af3b-6c5482ef6de4)
+
+
 
 
 
 
 # Run project
 หลังการ setup project เสร็จเรียบร้อยแล้วนั้นสามารถเริ่ม run project ได้โดย
-- เริ่มการ run frontend ด้วยคำสั่ง `cd fronend` และ `npm run android` โดยต้องเปิด emulator ไว้ก่อนใช้งานคำสั่ง
+- เริ่มการ run frontend ด้วยคำสั่ง `cd fronend` และ `npm run android` โดยต้องเปิด emulator ไว้ก่อนใช้งานคำสั่งเท่านั้น โดการ Run ครั้งแรกจะใช้เวลานานกว่าปกติ โดยหลัง run เสร็จตัว App จะเปิดขึ้นมาดังภาพ
+  ![image](https://github.com/user-attachments/assets/3a7b9fb7-8a94-450a-99c6-4a6a6cca9e13)
+
 - เริ่มการ run backend ด้วยคำสั่ง `cd backend` และ `npm run start:dev`
