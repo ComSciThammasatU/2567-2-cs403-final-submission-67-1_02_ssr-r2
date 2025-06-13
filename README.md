@@ -13,7 +13,228 @@
 1. นายณกลิน บุณยกะลิน  6409682660  nagalin.pun@dome.tu.ac.th
 2. นายสันติภาพ สโมสร   6409680086  santiphap.sam@dome.tu.ac.th
    
-Manual / Instructions for your projects starts here !
+# directory tree สำหรับ frontend
+```
+└── 📁frontend // โฟลเดอร์หลักของ frontend
+    └── 📁.expo // โฟลเดอร์การตั้งค่า Expo
+        └── devices.json // ข้อมูลอุปกรณ์ที่ใช้ทดสอบ
+        └── README.md // เอกสารอธิบายการใช้งาน
+        └── 📁types // โฟลเดอร์เก็บ type definitions
+            └── router.d.ts // กำหนด type สำหรับ router
+    └── 📁.maestro // โฟลเดอร์สำหรับการทดสอบ e2e
+        └── e2e.yaml // ไฟล์การตั้งค่าการทดสอบ e2e
+    └── 📁app // โฟลเดอร์หลักของแอพพลิเคชัน
+        └── _layout.tsx // ไฟล์กำหนด root layout
+        └── 📁(tabs) // โฟลเดอร์จัดการ tab navigation
+            └── _layout.tsx // ไฟล์กำหนด layout ของ tabs
+            └── 📁(stack) // โฟลเดอร์จัดการ stack navigation
+                └── _layout.tsx // ไฟล์กำหนด layout ของ stack
+                └── 📁event // โฟลเดอร์จัดการหน้างานแสดงดนตรี
+                    └── _layout.tsx // ไฟล์กำหนด layout ของหน้า event
+                    └── detail.tsx // หน้าแสดงรายละเอียดและอัปเดตงานแสดงดนตรี
+                    └── index.tsx // หน้างานแสดงดนตรีทั้งหมด
+                    └── run.tsx // หน้าจัดการการ run ของงานแสดงดนตรี
+                └── 📁song // โฟลเดอร์จัดการหน้าเพลงของงานแสดงดนตรี
+                    └── _layout.tsx // ไฟล์กำหนด layout ของหน้า song
+                    └── assign-player.tsx // หน้า assign และดูข้อมูล player
+                    └── create.tsx // หน้าสร้างเพลงใหม่
+                    └── detail.tsx // หน้าแสดงรายละเอียดและอัปเดตเพลง
+                    └── index.tsx // หน้าคิวเพลงของงานแสดงดนตรี
+            └── 📁admin // โฟลเดอร์จัดการหน้า System admin
+                └── account-config.tsx // หน้าตั้งค่าบัญชี
+                └── transfer-privilege.tsx // หน้าโอนสิทธิ์
+            └── main-menu.tsx // หน้าเมนูหลัก
+            └── profile.tsx // หน้าโปรไฟล์ผู้ใช้
+        └── index.tsx // หน้าหลักของแอพ
+        └── login.tsx // หน้าเข้าสู่ระบบ
+    └── 📁assets // โฟลเดอร์เก็บไฟล์ทรัพยากร
+        └── 📁fonts // โฟลเดอร์เก็บฟอนต์
+            └── SpaceMono-Regular.ttf // ฟอนต์ Space Mono
+        └── 📁icons // โฟลเดอร์เก็บไอคอน
+            └── calender.tsx // ไอคอนปฏิทิน
+            └── clock.tsx // ไอคอนนาฬิกา
+            └── close-square.tsx // ไอคอนปิด
+            └── edit.tsx // ไอคอนแก้ไข
+            └── list.tsx // ไอคอนรายการ
+        └── 📁images // โฟลเดอร์เก็บรูปภาพ
+            └── adaptive-icon.png // ไอคอนปรับขนาดอัตโนมัติ
+            └── bg.jpg // รูปพื้นหลัง
+            └── favicon.png // ไอคอนเว็บไซต์
+            └── icon.png // ไอคอนแอพ
+            └── music-bg.jpg // รูปพื้นหลังเพลง
+            └── partial-react-logo.png // ล็อกโก้ React บางส่วน
+            └── react-logo.png // ล็อกโก้ React
+            └── react-logo@2x.png // ล็อกโก้ React ขนาด 2x
+            └── react-logo@3x.png // ล็อกโก้ React ขนาด 3x
+            └── sciband.PNG // รูป SciBand
+            └── splash-icon.png // ไอคอนหน้า splash
+    └── 📁components // โฟลเดอร์เก็บคอมโพเนนต์
+        └── 📁admin // components สำหรับ system admin
+            └── activate-account.tsx // component เปิดใช้งานบัญชี
+            └── deactivate-account.tsx // component ปิดใช้งานบัญชี
+            └── tranfer-admin.tsx // component โอนสิทธิ์แอดมิน
+            └── use-activate-account.ts // hook เปิดใช้งานบัญชี
+            └── use-deactivate-account.ts // hook ปิดใช้งานบัญชี
+            └── use-transfer-admin.ts // hook โอนสิทธิ์แอดมิน
+        └── 📁event // components เกี่ยวกับกิจกรรม
+            └── card.tsx // การ์ดแสดงงานแสดงดนตรี
+            └── event-action-buttons.tsx // ปุ่มดำเนินการงานแสดงดนตรี
+            └── form.tsx // ฟอร์มสร้างและอัปเดตงานแสดงดนตรี
+            └── modal.tsx // modal แสดงแบบฟอร์มงานแสดงดนตรี
+            └── use-event-form.ts // hook ฟอร์มกิจกรรม
+        └── 📁login // components เกี่ยวกับการเข้าสู่ระบบ
+            └── login.tsx // components เข้าสู่ระบบ
+            └── use-login.ts // hook การเข้าสู่ระบบ
+        └── 📁player // components เกี่ยวกับผู้เล่น
+            └── assigned-player-list.tsx // components สำหรับแแสดงรายชื่อ player ที่ถูก assigned ในเพลงนั้น ๆ
+            └── unassigned-player-list.tsx // components สำหรับแแสดงรายชื่อ player ที่ั่ยังไม่ถูก assigned ในเพลงนั้น ๆ
+            └── use-assign-player.ts // hook assign player
+            └── use-unassign-player.ts // hook unassign player
+        └── 📁profile // components เกี่ยวกับโปรไฟล์
+            └── profile.tsx // component โปรไฟล์
+        └── 📁run-event // components สำหรับหน้า run งานแสดงดนตรี
+            └── header.tsx // ส่วนหัวของหน้า run event
+            └── noti-modal.tsx // modal แจ้งเตือน player
+            └── song-queue-run.tsx // คิวเพลงที่กำลังเล่น
+            └── use-noti.ts // hook การแจ้งเตือนไปยัง Discord DM
+        └── 📁song // components เกี่ยวกับเพลง
+            └── card.tsx // การ์ดแสดงเพลง
+            └── form.tsx // ฟอร์มสร้างและอัปเดตเพลง
+            └── total-player-input.tsx // ช่องกรอกจำนวน player
+            └── use-song-form.ts // hook ฟอร์มเพลง
+        └── 📁ui // components reusable UI พื้นฐาน
+            └── background.tsx // พื้นหลัง
+            └── button.tsx // ปุ่ม
+            └── form-controller.tsx // ตัวควบคุมฟอร์ม สำหรับ React Hook Form
+            └── main-menu-card.tsx // การ์ดเมนูหลัก
+            └── text-input.tsx // ช่องกรอกข้อความ
+            └── text.tsx // ข้อความ
+    └── 📁hooks // โฟลเดอร์เก็บ global custom hooks
+        └── use-socket-query.ts // hook เชื่อมต่อ socket สำหรับระบบอัปเดตคิวเพลงแบบ real-time ขณะ run งานแสดงดนตรี 
+        └── use-theme.ts // hook สำหรับจัดการธีมสีในระบบ
+    └── 📁libs // โฟลเดอร์เก็บ library
+        └── axios.ts // file config axios สำหรับยิง API
+    └── 📁services // โฟลเดอร์เก็บ files service สำหรับยิง API
+        └── event.service.ts // service สำหรับงานแสดงดนตรี
+        └── song.service..ts // service สำหรับงานเพลง
+        └── user.service.ts // service สำหรับผู้ใช้งาน
+    └── 📁types // โฟลเดอร์เก็บ type definitions สำหรับ TypeScript
+        └── event.d.ts // type definitions สำหรับงานแสดงดนตรี
+        └── song.d.ts // type definitions สำหรับเพลง
+        └── user.d.ts // type definitions สำหรับผู้ใช้งาน
+    └── 📁utils // โฟลเดอร์เก็บฟังก์ชันช่วยเหลือขนาดเล็ก
+        └── check-user-role.ts // ฟังก์ชันตรวจสอบบทบาทผู้ใช้
+    └── 📁zustand // โฟลเดอร์จัดการ global state สำหรับ React Native
+        └── store.ts // ไฟล์เก็บ global state โดยประกอบด้วย ID งานแสดงดนตรีปัจจุบัน, ID เพลงปัจจุบัน, player type ปัจจุบัน
+    └── .env // ไฟล์เก็บตัวแปร config ต่าง ๆ เช่น API Keys
+    └── .env.example // ตัวอยย่าง file .env
+    └── app.json // การตั้งค่าแอพ Expo
+    └── cache.ts // ไฟล์จัดการแคช
+    └── expo-env.d.ts // TypeScript definitions สำหรับ Expo
+    └── package-lock.json // ไฟล์ล็อคเวอร์ชัน dependencies
+    └── package.json // การตั้งค่าและ dependencies ของโปรเจค
+    └── README.md // เอกสารอธิบายโปรเจค
+    └── tsconfig.json // การตั้งค่า TypeScript
+```
+
+# directory tree สำหรับ backend
+```
+└── 📁backend // โฟลเดอร์หลักของ backend
+    └── 📁prisma // โฟลเดอร์จัดการฐานข้อมูล
+        └── 📁migrations // โฟลเดอร์เก็บการเปลี่ยนแปลงฐานข้อมูล
+            └── 📁20250613085135_init // การเปลี่ยนแปลงเริ่มต้น
+                └── migration.sql // SQL สำหรับการเปลี่ยนแปลงฐานข้อมูล
+            └── migration_lock.toml // ไฟล์ล็อคเวอร์ชันการเปลี่ยนแปลง
+        └── schema.prisma // ไฟล์กำหนดโครงสร้างฐานข้อมูล
+        └── seed.ts // ไฟล์สำหรับใส่ seed database
+    └── 📁src // โฟลเดอร์เก็บ source code หลัก
+        └── 📁admins // โฟลเดอร์จัดการ system admin
+            └── admin.controller.ts // ตัวควบคุม system admin API
+            └── admin.module.ts // system admin module
+            └── admin.service.ts // service สำหรับ system admin
+            └── 📁dto // โฟลเดอร์เก็บ Data Transfer Objects สำหรับ API
+                └── transfer-admin.dto.ts // DTO สำหรับโอนสิทธิ์แอดมิน
+            └── 📁swaggers // โฟลเดอร์เก็บเอกสาร API
+                └── admin-swagger.ts // เอกสาร System admin API
+        └── app.module.ts // module หลักของแอพพลิเคชัน
+        └── 📁auth // โฟลเดอร์จัดการการยืนยันตัวตน
+            └── auth.controller.ts // ตัวควบคุม API การยืนยันตัวตน
+            └── auth.module.ts // module การยืนยันตัวตน
+            └── auth.service.ts // service การยืนยันตัวตน
+        └── 📁decorators // โฟลเดอร์เก็บ decorators ของ Nest.js
+            └── api-responses.decorator.ts // decorator สำหรับ Swagger
+        └── 📁discord // โฟลเดอร์จัดการ Discord
+            └── discord.module.ts // module Discord
+            └── discord.service.ts // service เกี่ยวกับ Discord
+        └── 📁events // โฟลเดอร์จัดการงานแสดงดนตรี
+            └── 📁dto // โฟลเดอร์เก็บ DTO
+                └── create-update-event.dto.ts // DTO สำหรับสร้างและอัปเดตงานแสดงดนตรี
+                └── get-current-song.dto.ts // DTO สำหรับดึงเพลงปัจจุบัน
+                └── get-event.dto.ts // DTO สำหรับดึงข้อมูลงานแสดงดนตรี
+            └── event.controller.ts // ตัวควบคุม API งานแสดงดนตรี
+            └── event.module.ts // module งานแสดงดนตรี
+            └── event.service.ts // service ของงานแสดงดนตรี
+            └── 📁swaggers // โฟลเดอร์เก็บเอกสาร API
+                └── event-swagger.ts // เอกสาร API งานแสดงดนตรี
+        └── 📁exceptions // โฟลเดอร์จัดการ global exceptions
+            └── custom-exception.ts // file custom exception ที่ใช้ภายในระบบ
+        └── 📁filters // โฟลเดอร์เก็บ filters ของ Nest.js
+            └── global-exception.filter.ts.ts // filter จัดการข้อผิดพลาดทั่วทั้งระบบ
+        └── 📁google-sheets // โฟลเดอร์จัดการ Google Sheets
+            └── google-sheets.module.ts // module Google Sheets
+            └── google-sheets.service.ts // service ของ Google Sheets
+        └── 📁guards // โฟลเดอร์เก็บ guards ของ NestJS สำหรับทำ Authorization
+            └── admin.guard.ts // guard สำหรับ system admin
+            └── backstage.guard.ts // guard สำหรับ backstage
+        └── main.ts // ไฟล์เริ่มต้นแอพพลิเคชัน
+        └── 📁middlewares // โฟลเดอร์เก็บ middlewares
+            └── auth.middleware.ts // middleware สำหรับยืนยันตัวตนผู้ใช้งานเพื่อป้องกันการเข้าถึง API จากผู้ใช้ที่ไม่ผ่านการยืนยันตัวตน
+        └── 📁players // โฟลเดอร์จัดการ player
+            └── 📁dto // โฟลเดอร์เก็บ DTO
+                └── get-player.dto.ts // DTO สำหรับดึงข้อมูล player
+                └── player.dto.ts // DTO สำหรับplayer
+            └── player.controller.ts // ตัวควบคุม API player
+            └── player.module.ts // module player
+            └── player.service.ts // service ของ player
+            └── 📁swaggers // โฟลเดอร์เก็บเอกสาร API
+                └── player-swagger.ts // เอกสาร API ของ player
+        └── prisma.service.ts // service ของ Prisma
+        └── 📁songs // โฟลเดอร์จัดการเพลง
+            └── 📁dto // โฟลเดอร์เก็บ DTO
+                └── create-update-song.dto.ts // DTO สำหรับสร้างและอัปเดตเพลง
+                └── reorder-song.dto.ts // DTO สำหรับจัดลำดับเพลงใหม่
+                └── song.dto.ts // DTO สำหรับเพลง
+            └── song.controller.ts // ตัวควบคุม API เพลง
+            └── song.module.ts // module เพลง
+            └── song.service.ts // service ของเพลง
+            └── 📁swaggers // โฟลเดอร์เก็บเอกสาร API
+                └── song-swagger.ts // เอกสาร API เพลง
+        └── 📁types // โฟลเดอร์เก็บ type definitions
+            └── express.d.ts // type definitions สำหรับ Express
+        └── 📁users // โฟลเดอร์จัดการผู้ใช้
+            └── 📁dto // โฟลเดอร์เก็บ DTO
+                └── get-user.dto.ts // DTO สำหรับดึงข้อมูลผู้ใช้
+            └── 📁swaggers // โฟลเดอร์เก็บเอกสาร API
+                └── user-swagger.ts // เอกสาร API ผู้ใช้
+            └── user.controller.ts // ตัวควบคุม API ผู้ใช้
+            └── user.module.ts // moduleผู้ใช้
+            └── user.service.ts // บริการผู้ใช้
+        └── 📁web-sockets // โฟลเดอร์จัดการ WebSocket
+            └── event.gateway.ts // gateway สำหรับงานแสดงดนตรี
+            └── websockets.module.ts // module WebSocket
+    └── .env // ไฟล์เก็บค่า config ต่าง ๆ เช่น API Keys
+    └── .env.example // ตัวอย่างไฟล์ .env
+    └── .eslintrc.js // การตั้งค่า ESLint
+    └── .prettierrc // การตั้งค่า Prettier
+    └── nest-cli.json // การตั้งค่า NestJS CLI
+    └── package-lock.json // ไฟล์ล็อคเวอร์ชัน dependencies
+    └── package.json // การตั้งค่าและ dependencies ของโปรเจค
+    └── README.md // เอกสารอธิบายโปรเจค
+    └── tsconfig.build.json // การตั้งค่า TypeScript สำหรับการ build
+    └── tsconfig.json // การตั้งค่า TypeScript
+```
+
+
 # ระบบจัดการงานแสดงของชุมนุมดนตรี คณะวิทยาศาสตร์และเทคโนโลยี
 - เป็นแอปพลิเคชันช่วยในการแก้ไขปัญหาเรื่องการสับสนระหว่างการขึ้นแสดง ผู้เล่นไม่รู้คิวของตัวเอง
 - เป็นแอปพลิเคชันช่วยในการจัดการปัญหาเรื่องกลุ่ม line ที่เยอะและมีจำนวนมากในแต่ละงาน
